@@ -25,3 +25,9 @@
 
 ### Unit Testing
 1. Unable to make connection mocking work in interest of time so added a unit test outline once connection mocking is available
+
+### To Improve
+1. Use structs to simplify data sharing for handlers
+2. Use better error handling structs/package for consistent error to the client
+3. Figure out how to mock connections for unit tests
+4. Find an optimal way of making the "whoelse" handler work. I forgot that there's no concept of sets in GoLang but the Map can be utilized better instead of printing each clientID on the fly.
