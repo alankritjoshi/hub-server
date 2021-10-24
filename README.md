@@ -2,6 +2,9 @@
 
 ## Simple TCP-based chat server. Client can be found: https://github.com/alankritjoshi/hub-client
 
+## Setup
+1. `go run server.go 1234`
+
 ## How it works
 1. Use SyncMap for maintaining concurrent access to different clients
 2. Use Go Routines for handling connection
