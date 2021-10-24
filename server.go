@@ -89,7 +89,7 @@ func handlerSendCommand(input string, id uint64, connMap *sync.Map, c net.Conn) 
 		conn, ok := value.(net.Conn)
 		if !ok {
 			fmt.Printf("Error sending message to %s!", key)
-			connMap.Delete(id)
+			connMap.Delete(key)
 		}
 		conn.Write([]byte(fmt.Sprintf("[FROM %d] %s\n", id, message)))
 		return true
