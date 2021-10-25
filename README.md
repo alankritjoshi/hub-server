@@ -14,7 +14,7 @@
     3. "send [message] [clientID 1] [clientID 2] ... [clientID 3]" -> sends [message] to specified space-separated clientIDs
 
 ## Checks in place
-1. Hard limit of 255 simultaneous connections
+1. Hard limit of 255 message receivers for `send`
 2. Rejection of commands other than described above
 
 ## Testing
